@@ -1,0 +1,27 @@
+[package]
+name = "tdyne-peer-id-registry"
+version = "0.1.0"
+authors = ["Dan Groshev <dan@dgroshev.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/torrentdyne/tdyne-peer-id-registry"
+documentation = "https://docs.rs/tdyne-peer-id-registry"
+homepage = "https://github.com/torrentdyne/tdyne-peer-id-registry"
+description = """
+A library for parsing and (soon) encoding BitTorrent peer IDs. Tracks all known BitTorrent
+implementations and their peer ID formats.
+"""
+categories = ["network-programming", "parser-implementations"]
+exclude = ["justfile", "/.github/*", "/fuzz/*"]
+edition = "2021"
+
+[dev-dependencies]
+test-case = "3"
+pretty_assertions = "1"
+
+[build-dependencies]
+phf = { version = "0.11", default-features = false }
+phf_codegen = "0.11"
+
+[dependencies]
+phf = "0.11"
+tdyne-peer-id = "1"
