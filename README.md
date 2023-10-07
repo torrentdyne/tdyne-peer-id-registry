@@ -1,5 +1,3 @@
-[![Build Status](https://github.com/torrentdyne/tdyne-peer-id-registry/actions/workflows/ci.yml/badge.svg)](https://github.com/torrentdyne/tdyne-peer-id-registry/actions/workflows/ci.yml)
-
 <!-- cargo-rdme start -->
 
 # BitTorrent peer ID registry/parser/(soon) encoder
